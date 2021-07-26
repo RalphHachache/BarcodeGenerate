@@ -1,0 +1,61 @@
+﻿@*<img style="position: relative; display: inline-block; left: 50%; transform: translate(-50%);" src="~/Logos/Logo.png" ALT="Depechemode" WIDTH=300 HEIGHT=100>
+    <img style="position: relative; display: inline-block; left: 50%; transform: translate(-50%);" src="~/Logos/Logo.png" ALT="6:05" WIDTH=200 HEIGHT=50>*@
+
+
+<head>
+
+    <style>
+        .outer-wrapper {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .frame {
+            width: 250px;
+        
+      
+            vertical-align: middle;
+            text-align: center;
+            display: table-cell;
+        }
+        .frame2 {
+            width: 250px;
+            height: 180px;
+            border: 0px solid black;
+            vertical-align: middle;
+            text-align: center;
+            display: table-cell;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        .content {
+            border: 10px solid #2f3190;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+
+        <div class="outer-wrapper">
+            <div class="frame2">
+                <img src="~/Logos/Logo.png" alt="Club Card">
+            </div>
+        </div>
+        <br>
+        <!-- Alignment of vertically oversized image -->
+        <div class="outer-wrapper">
+            <div class="frame">
+                <img src="@Url.Content("~/Barcode.jpg")" alt="Flying Kites">
+            </div>
+        </div>
+        <br>
+    </div>
+    <!-- Alignment of horizontally oversized image -->
+    
+</body>
